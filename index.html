@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Off-Canvas Menu</title>
+  <meta charset="utf-8" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <meta name="description" content="Simple idea for enhancing off-canvas menu transitions" />
+  <meta name="keywords" content="navigation, menu, mobile menu, off-canvas, effect, transition, interaction, inspiration, web design, منو موبایل" />
+  <meta name="author" content="css-tricks.ir" />
+
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+  <!-- Main style -->
+  <link rel="stylesheet" type="text/css" href="css/prefixed-style.css" />
+
+  <!--[if IE]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<body id="body">
+  <menu class="menu">
+    <li>
+      <a href="#" class="fa fa-home"></a>
+    </li>
+    <li>
+      <a href="#" class="fa fa-user"></a>
+    </li>
+    <li>
+      <a href="#" class="fa fa-phone"></a>
+    </li>
+    <li>
+      <a href="#" class="fa fa-globe"></a>
+    </li>
+    <li>
+      <a href="#" class="fa fa-gear"></a>
+    </li>
+    <li>
+      <a href="#" class="fa fa-search"></a>
+    </li>
+  </menu>
+  <div class="content-wrapper">
+    <a href="#" onclick="document.getElementById('body').classList.toggle('open');" class="fa fa-bars menu-btn"></a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1b1b1b;
+  padding-top: 30px;
+}
+
+.demo-top-bar {
+  font-family: tahoma;
+  direction: rtl;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.demo-top-bar a {
+  display: inline-block;
+  font-size: .8em;
+  padding: .5em 1em;
+  color: #eee;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.demo-top-bar a i {
+  font-size: 1.4em;
+}
+
+.demo-top-bar a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.mobile {
+  width: 340px;
+  height: 600px;
+  margin: 10px auto;
+  padding: 86px 50px 89px 49px;
+  background-image: url(../img/iphone.png);
+}
+
+.main-container {
+  overflow: hidden;
+  position: relative;  
+  height: 100%;
+}
+
+.content-wrapper {
+  background-color: #325585;  
+  min-height: 100%;
+  transform: translate3d(0,0,0);
+  transition: transform .3s;
+}
+
+body.open .content-wrapper {
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translate3d(-46px,0,0);
+}
+
+
+.content-wrapper .menu-btn {
+  display: block;
+  float: right;
+  color: hsl(0,0%,100%);
+  padding: .5em;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: .5em;
+  list-style-type: none;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: hsl(0,0%,100%);
+  font-size: 1.5em;
+  padding: .5em;
+  opacity: 0;
+  transform: translate3d(48px, -48px, 0) scale(0);
+  transition: .4s .3s all;
+}
+
+body.open .menu a {
+  opacity: 1;
+  transform: translate3d(0,0,0) scale(1);
+}
+
+body.open .menu li:nth-child(0) a {
+  transition :  0.2s .1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(1) a {
+  transition :  0.2s .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(2) a {
+  transition :  0.2s .3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(3) a {
+  transition :  0.2s .4s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(4) a {
+  transition :  0.2s .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(5) a {
+  transition :  0.2s .6s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(6) a {
+  transition :  0.2s .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}

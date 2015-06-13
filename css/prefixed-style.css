@@ -1,0 +1,143 @@
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1b1b1b;
+}
+
+.content-wrapper {
+  background-color: #325585;  
+  min-height: 100%;  
+  -webkit-transform: translate3d(0,0,0);  
+     -moz-transform: translate3d(0,0,0);  
+          transform: translate3d(0,0,0);
+  -webkit-transition: -webkit-transform .3s;
+     -moz-transition: -moz-transform .3s;
+       -o-transition: -o-transform .3s;
+          transition: transform .3s;
+}
+
+body.open .content-wrapper {
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+       -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform: translate3d(-46px,0,0);
+     -moz-transform: translate3d(-46px,0,0);
+          transform: translate3d(-46px,0,0);
+}
+
+
+.content-wrapper .menu-btn {
+  display: block;
+  float: right;
+  color: hsl(0,0%,100%);
+  padding: .5em;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: .5em;
+  list-style-type: none;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: hsl(0,0%,100%);
+  font-size: 1.5em;
+  padding: .5em;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate3d(48px, -48px, 0) scale(0);
+     -moz-transform: translate3d(48px, -48px, 0) scale(0);
+          transform: translate3d(48px, -48px, 0) scale(0);
+  -webkit-transition: .4s .3s all;
+     -moz-transition: .4s .3s all;
+       -o-transition: .4s .3s all;
+          transition: .4s .3s all;
+}
+
+body.open .menu a {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0) scale(1);
+     -moz-transform: translate3d(0,0,0) scale(1);
+          transform: translate3d(0,0,0) scale(1);
+}
+
+body.open .menu li:nth-child(0) a {
+  -webkit-transition :  0.2s .1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+     -moz-transition :  0.2s .1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+       -o-transition :  0.2s .1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+          transition :  0.2s .1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(1) a {
+  -webkit-transition :  0.2s .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+     -moz-transition :  0.2s .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+       -o-transition :  0.2s .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+          transition :  0.2s .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(2) a {
+  -webkit-transition :  0.2s .3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+     -moz-transition :  0.2s .3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+       -o-transition :  0.2s .3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+          transition :  0.2s .3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(3) a {
+  -webkit-transition :  0.2s .4s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+     -moz-transition :  0.2s .4s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+       -o-transition :  0.2s .4s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+          transition :  0.2s .4s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(4) a {
+  -webkit-transition :  0.2s .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+     -moz-transition :  0.2s .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+       -o-transition :  0.2s .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+          transition :  0.2s .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(5) a {
+  -webkit-transition :  0.2s .6s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+     -moz-transition :  0.2s .6s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+       -o-transition :  0.2s .6s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+          transition :  0.2s .6s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body.open .menu li:nth-child(6) a {
+  -webkit-transition :  0.2s .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+     -moz-transition :  0.2s .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+       -o-transition :  0.2s .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+          transition :  0.2s .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
